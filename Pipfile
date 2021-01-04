@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+spacy = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+regex = "*"
+xgboost = "*"
+notebook = "*"
+ipykernel = "*"
+matplotlib = "*"
+joblib = "*"
+tensorflow = "*"
+keras = "*"
+seaborn = "*"
+keras-tuner = "*"
+jupyterlab = "*"
+
+[requires]
+python_version = "3.8"
