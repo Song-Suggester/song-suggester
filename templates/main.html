@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Song Suggester - {{ title }}</title>
+  </head>
+
+  <body>
+    <article class="flex two" style="padding: 3em 1em;">
+      {% block content %}
+      <div>
+        <h1>Input</h1>
+        <form action="/add" method="post">
+          <input type="text" name="title" placeholder="Song Title">
+          <input type="text" name="artist" placeholder="Artist Name">
+          <input type="submit" value="Add Song">
+        </form>
+      </div>
+      <div>
+        <h3>Suggest</h3>
+        <form action="/suggest" method="post">
+          <input type="submit" value="Suggest Songs">
+        </form>
+        <form action="/clear" method="post">
+          <input type="submit" value="Clear Liked Songs">
+        </form>
+      </div>
+      {% endblock %}
+    </article>
+  </body>
+</html>
