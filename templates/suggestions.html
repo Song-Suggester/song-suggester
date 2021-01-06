@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Song Suggestions</title>
+  </head>
+  <body>
+    <article class="flex two" style="padding: 3em 1em;">
+      {% block content %}
+      <div>
+          <ol style="list-style-type: none; display: inline-block;">
+            {% for item in df%}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ol>
+          <ol style="list-style-type: none; display: inline-block;">
+            {% for item in ats%}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ol>
+        </form>
+      </div>
+      {% endblock %}
+    </article>
+  </body>
+</html>
