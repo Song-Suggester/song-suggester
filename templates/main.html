@@ -13,6 +13,17 @@
           <input type="text" name="title" placeholder="Song Title">
           <input type="text" name="artist" placeholder="Artist Name">
           <input type="submit" value="Add Song">
+          <h2>Songs</h2>
+          <ol style="list-style-type: none; display: inline-block;">
+            {% for item in df%}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ol>
+          <ol style="list-style-type: none; display: inline-block;">
+            {% for item in ats%}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ol>
         </form>
       </div>
       <div>
