@@ -21,6 +21,7 @@ keras = "*"
 seaborn = "*"
 keras-tuner = "*"
 jupyterlab = "*"
+flask = "*"
 
 [requires]
 python_version = "3.8"
